@@ -1,0 +1,89 @@
+<!-- <menu xmlns:android="http://schemas.android.com/apk/res/android" > -->
+
+
+<!-- <item -->
+<!-- android:id="@+id/action_settings" -->
+<!-- android:orderInCategory="100" -->
+<!-- android:showAsAction="never" -->
+<!-- android:title="@string/action_settings"/> -->
+
+
+<!-- </menu> -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_share2"
+        android:actionProviderClass="com.example.myandroidapp.MyActionProvider"
+        android:showAsAction="ifRoom"
+        android:title="Share"/>
+    <item
+        android:id="@+id/menu_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:showAsAction="ifRoom"
+        android:title="Share"/>
+    <item
+        android:id="@+id/menu_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always|collapseActionView"
+        android:title="menu_search">
+    </item>
+    <item
+        android:id="@+id/file"
+        android:title="file3333">
+
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/create_new"
+                android:title="create_new"/>
+            <item
+                android:id="@+id/open"
+                android:title="open"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/file2"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="ifRoom|withText"
+        android:title="file2">
+
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/create_new2"
+                android:title="create_new2"/>
+            <item
+                android:id="@+id/open2"
+                android:title="open2"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/file3"
+        android:title="file3">
+
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/create_new3"
+                android:title="create_new3"/>
+            <item
+                android:id="@+id/open3"
+                android:title="open3"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/file4"
+        android:title="file4">
+
+        <!-- "file" submenu -->
+        <menu>
+            <item
+                android:id="@+id/create_new4"
+                android:title="create_new4"/>
+            <item
+                android:id="@+id/open4"
+                android:title="open4"/>
+        </menu>
+    </item>
+
+</menu>
